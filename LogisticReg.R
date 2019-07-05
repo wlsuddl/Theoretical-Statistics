@@ -1,8 +1,6 @@
 install.packages("dplyr")
 library(dplyr)
 
-getwd()
-setwd("/Users/Jinyoung-Kim/Google 드라이브/대학원1학기/이통1/과제6")
 bankruptcy<-read.csv("bankruptcy.csv", header=T, sep=",")
 bankrup<-bankruptcy[,-c(1,3)]        ## 1,3 열 제거
 head(bankrup)
